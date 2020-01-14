@@ -1,4 +1,4 @@
-module github.com/dnnrly/goclitem
+module github.com/dnnrly/paragraphical
 
 go 1.13
 

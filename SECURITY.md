@@ -12,7 +12,7 @@ currently being supported with security updates.
 
 ## Reporting a Vulnerability
 
-To report a security vulnerability to `goclitem`,
-please [file an issue](https://github.com/dnnrly/goclitem/issues/new?assignees=&labels=&template=bug_report.md&title=)
+To report a security vulnerability to `paragraphical`,
+please [file an issue](https://github.com/dnnrly/paragraphical/issues/new?assignees=&labels=&template=bug_report.md&title=)
 at this repository's Issues page.
 
