@@ -60,7 +60,7 @@ lint:
 	golangci-lint run
 
 release: clean
-	cd cmd/$(NAME) ; $(GORELEASER_BIN) $(PUBLISH_PARAM)
+	$(GORELEASER_BIN) $(PUBLISH_PARAM)
 
 update:
 	$(GO_BIN) get -u
