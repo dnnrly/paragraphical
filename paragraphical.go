@@ -4,7 +4,7 @@ import (
 	"strings"
 )
 
-func Format(text string) string {
+func Format(limit int, text string) string {
 	parts := strings.Split(text, " ")
 
 	result := ""
@@ -12,10 +12,14 @@ func Format(text string) string {
 
 	for _, word := range parts[1:] {
 		possible := line + " " + word
-		if len(possible) > 20 {
+		switch {
+		case len(possible) > limit:
 			result += line + "\n"
 			line = word
-		} else {
+			//		case len(possible) == limit:
+			//			result += possible + "\n"
+			//			line = word
+		default:
 			line += " " + word
 		}
 	}

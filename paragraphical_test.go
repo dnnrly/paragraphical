@@ -14,6 +14,10 @@ long string that
 needs to be broken
 in to smaller lines
 in the terminal.`
+	assert.Equal(t, expected20, Format(20, text))
 
-	assert.Equal(t, expected20, Format(text))
+	expected30 := `This is a fairly long string
+that needs to be broken in to
+smaller lines in the terminal.`
+	assert.Equal(t, expected30, Format(30, text))
 }
