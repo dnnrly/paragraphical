@@ -32,6 +32,9 @@ clean-deps:
 	rm -rf ./libexec
 	rm -rf ./share
 
+./bin:
+	mkdir ./bin
+
 ./bin/golangci-lint:
 	curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh -s v1.17.1
 
