@@ -15,20 +15,3 @@ jobs:
         with:
           go-version: '1.13'
       - run: make test
-  release:
-    name: Release
-    runs-on: ubuntu-latest
-    needs: [ validate ]
-    steps:
-    - name: Check out code
-      uses: actions/checkout@master
-    - name: Install Deps
-      run: make build-deps
-      env:
-        GO111MODULE: on
-    - name: Perform release
-      run: make release
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GO111MODULE: on
-      if: success()
