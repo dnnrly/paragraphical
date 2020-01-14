@@ -1,31 +1,60 @@
-# Go CLI Template
+# Paragraphical
 
-This is a template for Go CLI tools. Major features are:
+This a library to format you blocks of text in neat paragraph layouts without you having to think about it too much.
 
-1. Setup script
-2. Release build action
-3. PR validation action
-4. Code of Conduct
-5. Basic security policy
-6. Modules enabled
-7. Rudimentary accepance tests
+## Getting Started
 
-## Setup
+### Prerequisites
 
-1. Create a new repo from this template
-2. `$ ./setup.sh`
-3. Follow the prompts
+If you intend to build and test this library, I recommend that you have `make` installed.
 
-Use the `-d` option to see what will be modified without changing any files.
+### Installing
 
-## Important `make` targets
 
-* `deps` - downloads all of the deps you need to build, test, and release
-* `build` - builds your application
-* `test` - runs unit tests
-* `ci-test` - run tests for CI validation
-* `acceptance-test` - run the acceptance tests
-* `lint` -  run linting
-* `update` - update Go dependencies
-* `clean` - clean project dependencies
-* `clean-deps` - remove all of the build dependencies too
+```
+go get github.com/dnnrly/paragraphical
+```
+
+
+## Running the tests
+
+```
+make test
+```
+
+Or directly:
+```
+go test ./...
+```
+
+
+## Built With
+
+* Go
+* and love
+
+## Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+
+## Authors
+
+* **Pascal Dennerly** - *Initial work* - [dnnrly](https://github.com/dnnrly)
+
+See also the list of [contributors](https://github.com/dnnrly/paragraphical/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc
+
+
