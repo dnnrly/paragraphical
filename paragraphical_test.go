@@ -21,3 +21,15 @@ that needs to be broken in to
 smaller lines in the terminal.`
 	assert.Equal(t, expected30, Format(30, text))
 }
+
+func Test_LongWords(t *testing.T) {
+	text := `This is another really long sentence with an additionally1234567890123 long word.`
+
+	expected := `This is another
+really long sentence
+with an
+additionally1234567890123
+long word.`
+
+	assert.Equal(t, expected, Format(20, text))
+}
