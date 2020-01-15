@@ -5,25 +5,27 @@ import (
 )
 
 func Format(limit int, text string) string {
-	parts := strings.Split(text, " ")
+	result := []string{}
+	allLines := strings.Split(text, "\n")
+	for _, line := range allLines {
+		parts := strings.Split(line, " ")
 
-	result := ""
-	line := parts[0]
+		line = parts[0]
 
-	for _, word := range parts[1:] {
-		possible := line + " " + word
-		switch {
-		case len(possible) > limit:
-			result += line + "\n"
-			line = word
-			//		case len(possible) == limit:
-			//			result += possible + "\n"
-			//			line = word
-		default:
-			line += " " + word
+		for _, word := range parts[1:] {
+			possible := line + " " + word
+			switch {
+			case len(possible) > limit:
+				result = append(result, line)
+				line = word
+			default:
+				line += " " + word
+			}
 		}
+		result = append(result, line)
 	}
-	result += line
 
-	return result
+	output := strings.Join(result, "\n")
+
+	return output
 }

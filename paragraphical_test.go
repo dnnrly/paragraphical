@@ -33,3 +33,22 @@ long word.`
 
 	assert.Equal(t, expected, Format(20, text))
 }
+
+func Test_Multiline(t *testing.T) {
+	text := `This is some more super long text but
+this time it's broken over
+several lines.
+
+Here is some more text to be wrapped.`
+
+	expected := `This is some more
+super long text but
+this time it's
+broken over
+several lines.
+
+Here is some more
+text to be wrapped.`
+
+	assert.Equal(t, expected, Format(20, text))
+}
