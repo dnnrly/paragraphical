@@ -17,6 +17,9 @@ func getIndent(parts []string) string {
 	return indent
 }
 
+// Format splits the string so that it fits in side the length limit, attempting to honour
+// separated lines and additional indentation. Splits occurs on the space character so
+// individual words are not split. This allows long strings (such as URLs) to remain valid.
 func Format(limit int, text string) string {
 	result := []string{}
 	allLines := strings.Split(text, "\n")
