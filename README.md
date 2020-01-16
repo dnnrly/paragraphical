@@ -2,6 +2,9 @@
 
 This a library to format you blocks of text in neat paragraph layouts without you having to think about it too much.
 
+[![godoc](https://godoc.org/github.com/dnnrly/paragraphical?status.svg)](http://godoc.org/github.com/dnnrly/paragraphical)
+[![report card](https://goreportcard.com/badge/github.com/dnnrly/paragraphical)](https://goreportcard.com/report/github.com/dnnrly/paragraphical)
+
 ## Getting Started
 
 ### Prerequisites
@@ -39,7 +42,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/dnnrly/paragraphical/tags). 
 
 ## Authors
 
@@ -49,7 +52,7 @@ See also the list of [contributors](https://github.com/dnnrly/paragraphical/cont
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
 
