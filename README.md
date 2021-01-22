@@ -2,6 +2,7 @@
 
 This a library to format you blocks of text in neat paragraph layouts without you having to think about it too much.
 
+[![codecov](https://codecov.io/gh/dnnrly/paragraphical/branch/master/graph/badge.svg?token=I4PM1CJZ4G)](https://codecov.io/gh/dnnrly/paragraphical)
 [![godoc](https://godoc.org/github.com/dnnrly/paragraphical?status.svg)](http://godoc.org/github.com/dnnrly/paragraphical)
 [![report card](https://goreportcard.com/badge/github.com/dnnrly/paragraphical)](https://goreportcard.com/report/github.com/dnnrly/paragraphical)
 
